@@ -139,7 +139,7 @@ class Database:
         Session = sessionmaker(bind=engine)
         session = Session()
         
-        # Получение экземпляров классов
+        # Получение классов
         class_name_list = ['publisher', 'book','stock','shop','sale']
         Publisher, Book, Stock, Shop, Sale = (self.CLASS_TABLE_DICT.get(n) for n in class_name_list)
 
