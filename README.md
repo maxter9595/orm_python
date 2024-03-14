@@ -11,7 +11,7 @@
 2. Формирование методов класса <code>Database</code> (работа с базой данных):
    * формирование вводных параметов класса: драйвер, имя пользователя, пароль, имя базы данных, сервер (по умолчанию <code>localhost</code>), порт (по умолчанию <code>5432</code>);
    * метод <code>get_engine</code>: запуск и вывод движка, необходимого для созадния таблиц и инициации сессий;
-   * метод <code>create_tables</code>: вызов базового класса и создание таблиц;
+   * метод <code>run_create_tables</code>: вызов базового класса и создание таблиц;
    * метод <code>get_json_data</code>: извлечение файла tests_data.json по [URL](https://raw.githubusercontent.com/netology-code/py-homeworks-db/SQLPY-76/06-orm/fixtures/tests_data.json);
    * метод <code>get_datetime</code>: корректировка дат файла tests_data.json;
    * метод <code>fill_tables</code>: инициация сессии для заполнения таблиц, созданных в рамках метода <code>create_tables</code>;
